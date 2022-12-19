@@ -1,0 +1,257 @@
+﻿/* 
+   style sheet for Nicks Webpages 
+   Filename: styles.css
+
+   Author:   Nicholas Lynch
+   Date:     12/18/2022
+ */
+ 
+ /* reset styles */
+ html{
+   font-size:18px
+}
+a,article,body,div,fieldset,figcaption,figure,footer,form,header,h1,h2,h3,img,input,label,legend,li,nav,p,section,textarea,ul,table{
+   border:0;
+   padding:0;
+   margin:0;
+}
+img {
+   max-width:100%;
+   height:auto;
+   width:auto
+}
+/* global styles */
+p {
+   margin-top:.4em;
+   font-size:1.1em
+}
+/* body and page container */
+body {
+   font-family:Lato,Arial,Helvetica,sans-serif;
+   background:rgb(100,149,237);
+}
+.container {
+   max-width:864px;
+   margin:0 auto;
+   position:relative
+}
+/* skip navigation link */
+p.skipnavigation {
+   margin:0
+}
+p.skipnavigation a {
+   position:absolute;
+   left:-10000px
+}
+p.skipnavigation a:focus {
+   color:#000;
+   background-color:snow;
+   top:3.5%;
+   left:auto;
+   right:3%;
+   z-index:2
+}
+/* header section */
+header {
+   background-color:#fff;
+   text-align:center
+}
+h1 {
+   font-weight:700;
+   font-size:2em
+}
+h1 img {
+   display:block
+} 
+.pic {
+   border-radius: 50%;
+ }
+.shadow {
+	text-shadow: 2px 2px 2px blue;
+}
+/* site navigation */
+nav.sitenavigation {
+   padding-left:10%;
+   background-color:blue
+}
+nav.sitenavigation li {
+   display:inline-block;
+   margin:.4em .6em;
+   font-size:1.1em
+}
+nav.sitenavigation a:link {
+   color:#ff0;
+   text-decoration:none
+}
+nav.sitenavigation a:visited {
+   color:#fff
+}
+nav.sitenavigation a:hover,nav.sitenavigation a:focus {
+   color:#ff0;
+   text-shadow:1px -1px 0 #000
+}
+/* main content */
+article {
+   padding:1% 5%;
+   text-align:left;
+   background-color:#fff;
+   overflow:auto
+}
+h2 {
+   margin:0 0 .4em;
+   font-size:1.8em;
+   font-weight:700
+}
+h3 {
+   margin:1em 0 .5em;
+   font-size:1.2em;
+   font-weight:700;
+   color:rgb(100,149,237);
+} 
+figure {
+   max-width:60%;
+   margin-bottom:1em;
+   float:right;
+   clear:both;
+   text-align:center
+}
+table {
+   border-collapse:collapse;
+   border-spacing:0
+}
+td,th {
+   padding:0 .4em .8em;
+   font-size:1.3em
+}
+td:first-child {
+   font-weight:700
+}
+/* main content table */
+th, td {
+   border: 1px solid black;
+   padding: 0.5em;
+}
+th {
+   background-color: blue;
+}
+
+.course {
+   background-color: cyan;
+}
+.IP {
+   background-color: tan;
+}
+.credit {
+   background-color: beige;
+}
+/* form styles */
+form {
+   margin:2%;
+   padding:2%;
+   border:2px solid #000;
+   background-color:#ff9c78
+}
+.form-instructions {
+   color:rgb(100,149,237);
+}
+/* fieldset styles */
+fieldset {
+   margin:0 0 1em 1em
+}
+.submitbutton {
+   margin-bottom:0;
+   text-align:center
+}
+@keyframes color-change {
+   0% {
+     background-color: red;
+   }
+   100% {
+     background-color: green;
+   }
+ }
+ .animated-element {
+   animation: color-change 5s linear infinite;
+ }
+/* field styles */
+input,textarea {
+   border:1px solid #777;
+   padding:.2em;
+   font-size:1em
+}
+.contactinfo input:valid {
+   background-color:#d1f4bd
+}
+input:focus,textarea:focus {
+   background-color:#ff0
+}
+.contactinfo input {
+   position:absolute;
+   left:4em
+}
+#nameinput,#emailinput {
+   max-width:25em;
+   width:75%
+}
+#phoneinput {
+   width:50%;
+   max-width:12em
+}
+#notes {
+   width:96%;
+   margin-top:.5em;
+   display:block
+}
+/* label styles */
+label {
+   font-size:1em
+}
+.contactinfo label {
+   margin:.7em 0;
+   display:block;
+   position:relative
+}
+.contactinfo label:before {
+   content:"* ";
+   color:rgb(100,149,237);
+}
+/* main content CSS table */
+.table {
+   margin: 1em 0;
+   display: table;
+   font-size: 1.3em;
+}
+.row {
+   display: table-row;
+}
+.row div {
+   display: table-cell;
+   padding: 0.25em 0.5em;
+}
+.day {
+   font-weight: bold;
+}
+
+/* footer section */
+footer {
+   width:94%;
+   padding:1% 1% 1% 5%;
+   background-color:blue;
+   clear:both;
+   text-align: center;
+   font-size:1.1em;
+   display:inline-block
+}
+/* print styles */
+@media print {
+   .container,h1,h2,p {
+      color:#000;
+      background:#fff
+   }
+   nav {
+      display:none
+   }
+}
+@page {
+   margin:1in
+}

@@ -1,0 +1,148 @@
+﻿<html lang="en" style class=" js fontface generatedcontent"><head>
+   <title>Nick's Personal Contact page</title>
+   <!--
+      Nick's Contact page
+      Filename: contact_me.html
+   
+      Author: Nicholas Lynch  
+      Date:     12/18/2022
+   -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <script src="styles/modernizr-latest.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="styles/image_swap.js"></script>
+   <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="styles/styles.css">
+   <link rel="shortcut icon" href="images/favicon.png">
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <link rel="icon" sizes="192x192" href="images/android.png">
+</head>
+<body>
+   <div class="container">
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+      <header>
+         <h1><a href="index.html"><img src="images/con_ME.png" width="864" height="184" alt="Contact Me"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+         <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="work_experience.html">Work Experience</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>
+            <li><a href="OHRL.html">UMB OHRL Information</a></li>
+         </ul>
+      </nav>
+      <article id="contentstart">
+         <h2>Request Meeting</h2>
+         <p>To get started, please provide the following information:</p>
+         <form action="results.html">
+             <fieldset class="contactinfo">
+                  <legend>Contact Info</legend>
+                  <label for="nameinput">
+                      Name
+                      <input type="text" id="nameinput" name="name" placeholder="First and last name">
+                  </label>
+                  <label for="addressinput">
+                      Street Address
+                      <input type="text" id="addressinput" name="address">
+                  </label>
+                  <label for="zipinput">
+                      Zip Code
+                      <input type="text" id="zipinput" name="zip">
+                  </label>
+                  <label for="emailinput">
+                      Email
+                      <input type="email" id="emailinput" name="email" placeholder="address@example.com">
+                  </label>
+                  <label for="phoneinput">
+                      Phone
+                      <input type="tel" id="phoneinput" name="phone">
+                  </label>
+             </fieldset>
+                  <fieldset class="timinginfo">
+                      <legend>Best day(s) to schedule a meeting</legend>
+                      <label for="monday">
+                           <input type="checkbox" id="monday" name="days" value="Monday">
+                           Monday
+                      </label>
+                      <label for="tuesday">
+                           <input type="checkbox" id="tuesday" name="days" value="Tuesday">
+                           Tuesday
+                      </label>
+                      <label for="wednesday">
+                           <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+                           Wednesday
+                      </label>
+                      <label for="thursday">
+                           <input type="checkbox" id="thursday" name="days" value="Thursday">
+                           Thursday
+                      </label>
+                      <label for="friday">
+                           <input type="checkbox" id="friday" name="days" value="Friday">
+                           Friday
+                      </label>
+                      <label for="saturday">
+                           <input type="checkbox" id="saturday" name="days" value="Saturday">
+                           Saturday
+                      </label>
+                      <label for="sunday">
+                           <input type="checkbox" id="sunday" name="days" value="Sunday">
+                           Sunday
+                      </label>
+                  </fieldset>
+                  <fieldset class="jobtype">
+                           <legend>Meeting Type</legend>
+                           <label for="front">
+                               <input type="radio" name="area" id="front" value="House front">
+                               Zoom
+                           </label>
+                           <label for="border">
+                               <input type="radio" name="area" id="border" value="Border">
+                               In-person
+                           </label>
+                           <label for="multiple">
+                               <input type="radio" name="area" id="multiple" value="Multiple">
+                               Hybrid-Zoom & In-person
+                           </label>
+                           <label for="other">
+                               <input type="radio" name="area" id="other" value="Other">
+                               Other (please specify in Notes box below)
+                           </label>
+                      </fieldset>      
+                  <fieldset class="additionalinfo">
+                      <legend>Additional Information</legend>
+                      <label for="notes">
+                           Notes
+                           <textarea id="notes" name="notes" rows="4" cols="60"></textarea>
+                      </label>
+                  </fieldset>
+                  <fieldset class="submitbutton">
+                      <input type="submit" id="submit" value="Submit Request">
+                  </fieldset>                
+         </form>
+    </article>
+   <main>
+   <section>
+        <h1>Pictures of Nick's Family when clicked last image will change!</h1>
+        <ul id="image_list">
+          <li><a class="pic" href="images/FamN.jpg" title="Nick's Family"><img src="images/SISGRAD.jpg" alt="Nick" ></a></li>
+          <li><a class="pic" href="images/SISGRAD.jpg" title="Nick's Family"><img src="images/SIS&BRO.jpg" alt="Nick"></a></li>
+          <li><a class="pic" href="images/FAM.jpg" title="Nick's Family"><img src="images/FamN.jpg" alt="Nick"></a></li>
+          <li><a class="pic" href="images/SIS&BRO.jpg" title="Nick's Family"><img src="images/FAM.jpg" alt="Nick"></a></li>
+        </ul>
+        <h2 id="pic">Picture that swaps</h2>
+        <p><img id="image" src="images/FamN.jpg" alt="Nick's Family"></p>
+   </section>
+</main>
+<footer>
+   <script type="text/javascript">
+      var today = new Date();
+      document.write(document.lastModified)
+      document.write( " &copy;&nbsp;" );
+      document.write( "Nicholas Lynch" );
+      document.write( ", Personal Phone number (617) 877-3074")
+  </script>  
+</footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Nick's contact me Results page</title>
+      <!--
+         Nick's Results page
+         Filename: results.html
+      
+         Author:   Nicholas Lynch
+         Date:     12/18/2022
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="styles/modernizr-latest.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="icon" sizes="192x192" href="images/android.png">
+   </head>
+   <body>
+      <div class="container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+         <header>
+            <h1><a href="index.html"><img src="images/SUB.jfif" width="864" height="184" alt="Thanks for your Submission"></a></h1>
+         </header>
+         <nav class="sitenavigation">
+            <ul>
+               <li><a href="index.html">Home</a></li> 
+               <li><a href="work_experience.html">Work Experience</a></li>
+               <li><a href="academics.html">Academics</a></li>
+               <li><a href="contact_me.html">Contact Me</a></li>
+               <li><a href="OHRL.html">UMB OHRL Information</a></li>
+            </ul>
+         </nav>
+         <article id="contentstart">
+            <h2>Your contact form has been submitted</h2>
+               <h3>You entered the following data:</h3>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+               <video controls poster="images/fish.jpg" width="800" height="400">
+                  <source src="media/work_vid.mp4" type="video/mp4">
+                  <object type="application/x-shockwave-flash" width="800" height="400">
+                     <param name="base" value="media">
+                  </object>
+               </video>
+         </article>
+         <footer>
+            <script type="text/javascript">
+               var today = new Date();
+               document.write(document.lastModified)
+               document.write( " &copy;&nbsp;" );
+               document.write( "Nicholas Lynch" );
+               document.write( ", Personal Phone number (617) 877-3074")
+           </script>  
+         </footer>
+      </div>
+   </body>
+</html>
